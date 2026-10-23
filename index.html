@@ -1,0 +1,839 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ananya D K | AI & ML Engineer & Developer</title>
+  <meta name="description" content="Portfolio of Ananya D K - Computer Science and Engineering student specializing in AI & ML, Python development, IoT systems, and web technologies.">
+  <meta name="keywords" content="Ananya D K, AI ML Engineer, Python Developer, IoT, ESP32, Portfolio, Computer Science">
+  <meta name="author" content="Ananya D K">
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Ananya D K | AI & ML Engineer & Developer Portfolio">
+  <meta property="og:description" content="Exploring emerging tech, AI/ML systems, IoT prototyping, and modern web solutions.">
+  <meta property="og:type" content="website">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Space+Grotesk:wght@500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+
+  <!-- Font Awesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <!-- Main Stylesheet -->
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body data-theme="dark">
+  <!-- Toast Notification -->
+  <div id="toast" class="toast" role="status" aria-live="polite">
+    <i class="fa-solid fa-circle-check"></i>
+    <span id="toast-message">Copied to clipboard!</span>
+  </div>
+
+  <!-- Background Ambient Glow -->
+  <div class="ambient-glow glow-1"></div>
+  <div class="ambient-glow glow-2"></div>
+  <div class="ambient-grid"></div>
+
+  <!-- Navigation Bar -->
+  <header class="navbar" id="navbar">
+    <div class="nav-container">
+      <a href="#hero" class="brand-logo">
+        <span class="brand-bracket">&lt;</span>
+        <span class="brand-name">Ananya</span>
+        <span class="brand-accent">.AI</span>
+        <span class="brand-bracket">/&gt;</span>
+      </a>
+
+      <nav class="nav-menu" id="nav-menu">
+        <ul class="nav-list">
+          <li class="nav-item"><a href="#about" class="nav-link">About</a></li>
+          <li class="nav-item"><a href="#skills" class="nav-link">Skills</a></li>
+          <li class="nav-item"><a href="#projects" class="nav-link">Projects</a></li>
+          <li class="nav-item"><a href="#education" class="nav-link">Education</a></li>
+          <li class="nav-item"><a href="#certifications" class="nav-link">Certifications</a></li>
+          <li class="nav-item"><a href="#contact" class="nav-link">Contact</a></li>
+        </ul>
+      </nav>
+
+      <div class="nav-actions">
+        <!-- Theme Toggle -->
+        <button id="theme-toggle" class="theme-toggle-btn" aria-label="Toggle Theme" title="Switch dark/light mode">
+          <i class="fa-solid fa-moon icon-dark"></i>
+          <i class="fa-solid fa-sun icon-light"></i>
+        </button>
+
+        <!-- Resume Download CTA -->
+        <a href="resume.pdf" download="Ananya_DK_Resume.pdf" class="btn btn-outline btn-sm nav-resume-btn" title="Download Official Resume PDF">
+          <i class="fa-solid fa-file-arrow-down"></i>
+          <span>Resume</span>
+        </a>
+
+        <!-- Mobile Menu Hamburger -->
+        <button id="menu-toggle" class="menu-toggle-btn" aria-label="Toggle navigation menu" aria-expanded="false">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- Hero Section -->
+    <section id="hero" class="hero-section">
+      <div class="container hero-container">
+        <div class="hero-content">
+          <div class="hero-badge">
+            <span class="pulse-dot"></span>
+            <span>Available for Internship & Career Opportunities</span>
+          </div>
+
+          <h1 class="hero-title">
+            Hi, I'm <span class="gradient-text">Ananya D K</span>
+          </h1>
+
+          <p class="hero-subtitle">
+            Computer Science & Engineering Student <span class="tag-highlight">Specializing in AI & ML</span>
+          </p>
+
+          <p class="hero-bio">
+            Bridging foundational Artificial Intelligence with embedded IoT systems and full-stack web applications.
+            Passionate about exploring emerging tech, solving real-world challenges, and engineering impactful digital solutions.
+          </p>
+
+          <div class="hero-cta-group">
+            <a href="#projects" class="btn btn-primary">
+              <span>View My Projects</span>
+              <i class="fa-solid fa-arrow-right"></i>
+            </a>
+            <a href="resume.pdf" download="Ananya_DK_Resume.pdf" class="btn btn-secondary">
+              <i class="fa-solid fa-download"></i>
+              <span>Download Resume</span>
+            </a>
+            <a href="#contact" class="btn btn-ghost">
+              <i class="fa-solid fa-envelope"></i>
+              <span>Let's Talk</span>
+            </a>
+          </div>
+
+          <div class="hero-quick-meta">
+            <div class="meta-item">
+              <i class="fa-solid fa-location-dot"></i>
+              <span>Mangalore, Karnataka, India</span>
+            </div>
+            <div class="meta-separator">•</div>
+            <div class="meta-item">
+              <i class="fa-solid fa-graduation-cap"></i>
+              <span>AJIET Mangalore (B.E. AI & ML)</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="hero-card-wrapper">
+          <div class="hero-tech-card">
+            <div class="tech-card-header">
+              <div class="window-dots">
+                <span class="dot dot-red"></span>
+                <span class="dot dot-yellow"></span>
+                <span class="dot dot-green"></span>
+              </div>
+              <span class="window-title">ananya_profile.py</span>
+              <span class="code-badge">AI/ML</span>
+            </div>
+            <div class="tech-card-body">
+              <pre><code><span class="token-keyword">class</span> <span class="token-class">Developer</span>:
+    <span class="token-keyword">def</span> <span class="token-fn">__init__</span>(<span class="token-self">self</span>):
+        <span class="token-self">self</span>.name = <span class="token-string">"Ananya D K"</span>
+        <span class="token-self">self</span>.role = <span class="token-string">"AI & ML Engineer"</span>
+        <span class="token-self">self</span>.interests = [
+            <span class="token-string">"Artificial Intelligence"</span>,
+            <span class="token-string">"IoT Prototyping"</span>,
+            <span class="token-string">"Web Applications"</span>
+        ]
+        <span class="token-self">self</span>.status = <span class="token-string">"Ready to innovate"</span>
+
+    <span class="token-keyword">def</span> <span class="token-fn">build_future</span>(<span class="token-self">self</span>):
+        <span class="token-keyword">return</span> <span class="token-string">"Transforming ideas into reality ✨"</span></code></pre>
+            </div>
+            <div class="tech-pills">
+              <span class="tech-pill"><i class="fa-brands fa-python"></i> Python</span>
+              <span class="tech-pill"><i class="fa-solid fa-microchip"></i> ESP32 IoT</span>
+              <span class="tech-pill"><i class="fa-brands fa-js"></i> Web Tech</span>
+              <span class="tech-pill"><i class="fa-solid fa-brain"></i> Machine Learning</span>
+            </div>
+          </div>
+
+          <!-- Highlight metrics floating tags -->
+          <div class="floating-badge badge-top-right">
+            <i class="fa-solid fa-award"></i>
+            <div>
+              <strong>7.5 CGPA</strong>
+              <span>CSE (AI & ML)</span>
+            </div>
+          </div>
+          <div class="floating-badge badge-bottom-left">
+            <i class="fa-solid fa-code-commit"></i>
+            <div>
+              <strong>4+ Built Projects</strong>
+              <span>Robotics, AI & Web</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="section about-section">
+      <div class="container">
+        <div class="section-header">
+          <p class="section-tag">About Me</p>
+          <h2 class="section-title">Driven by Curiosity, Powered by Intelligence</h2>
+          <div class="section-divider"></div>
+        </div>
+
+        <div class="about-grid">
+          <div class="about-card story-card">
+            <div class="card-icon"><i class="fa-solid fa-compass"></i></div>
+            <h3>My Journey & Vision</h3>
+            <p>
+              I am a dedicated Computer Science & Engineering undergraduate specializing in <strong>Artificial Intelligence & Machine Learning</strong> at AJ Institute of Engineering and Technology, Mangalore.
+            </p>
+            <p>
+              My passion lies at the intersection of intelligent algorithms and practical engineering. Whether it is designing a hand gesture-controlled robot with ESP32 hardware, developing an AI-driven presentation analyzer, or engineering full-stack platforms, I thrive on building tools that simplify complexity.
+            </p>
+            <p>
+              I am actively seeking internship opportunities where I can apply my problem-solving mindset, gain industry experience, and contribute to forward-thinking projects.
+            </p>
+
+            <div class="languages-spoken">
+              <span class="lang-label"><i class="fa-solid fa-language"></i> Languages:</span>
+              <span class="lang-tag">English (Fluent)</span>
+              <span class="lang-tag">Kannada (Fluent)</span>
+              <span class="lang-tag">Hindi (Fluent)</span>
+            </div>
+          </div>
+
+          <div class="about-highlights-grid">
+            <div class="highlight-item">
+              <div class="highlight-icon"><i class="fa-solid fa-brain"></i></div>
+              <h4>AI & Problem Solving</h4>
+              <p>Formulating machine learning pipelines, NLP analysis concepts, and algorithm optimization.</p>
+            </div>
+
+            <div class="highlight-item">
+              <div class="highlight-icon"><i class="fa-solid fa-robot"></i></div>
+              <h4>IoT & Embedded Systems</h4>
+              <p>Hands-on hardware prototyping with ESP32, Arduino IDE, gesture sensors, and motor controls.</p>
+            </div>
+
+            <div class="highlight-item">
+              <div class="highlight-icon"><i class="fa-solid fa-layer-group"></i></div>
+              <h4>Full-Stack Foundation</h4>
+              <p>Building responsive front-ends, relational database architectures in MySQL, and Python backends.</p>
+            </div>
+
+            <div class="highlight-item">
+              <div class="highlight-icon"><i class="fa-solid fa-users"></i></div>
+              <h4>Collaboration & Adaptability</h4>
+              <p>Thriving in team hackathons, active communication, quick learning curve, and structured planning.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="section skills-section">
+      <div class="container">
+        <div class="section-header">
+          <p class="section-tag">Core Competencies</p>
+          <h2 class="section-title">Technical Expertise & Tooling</h2>
+          <div class="section-divider"></div>
+        </div>
+
+        <div class="skills-grid">
+          <!-- Skill Category: AI & Programming -->
+          <div class="skill-category-card">
+            <div class="category-header">
+              <div class="category-icon icon-ai"><i class="fa-brands fa-python"></i></div>
+              <div>
+                <h3>Programming & AI / ML</h3>
+                <span class="category-subtitle">Core Logic & Data</span>
+              </div>
+            </div>
+            <ul class="skills-list">
+              <li class="skill-pill">
+                <span class="skill-name">Python</span>
+                <span class="skill-level">Advanced</span>
+              </li>
+              <li class="skill-pill">
+                <span class="skill-name">Artificial Intelligence</span>
+                <span class="skill-level">Core</span>
+              </li>
+              <li class="skill-pill">
+                <span class="skill-name">Machine Learning</span>
+                <span class="skill-level">Intermediate</span>
+              </li>
+              <li class="skill-pill">
+                <span class="skill-name">Automated Feedback / NLP</span>
+                <span class="skill-level">Applied</span>
+              </li>
+              <li class="skill-pill">
+                <span class="skill-name">Data Processing</span>
+                <span class="skill-level">Foundational</span>
+              </li>
+            </ul>
+          </div>
+
+          <!-- Skill Category: IoT & Embedded Systems -->
+          <div class="skill-category-card">
+            <div class="category-header">
+              <div class="category-icon icon-iot"><i class="fa-solid fa-microchip"></i></div>
+              <div>
+                <h3>Embedded Systems & IoT</h3>
+                <span class="category-subtitle">Hardware & Prototyping</span>
+              </div>
+            </div>
+            <ul class="skills-list">
+              <li class="skill-pill">
+                <span class="skill-name">ESP32 Microcontroller</span>
+                <span class="skill-level">Hardware</span>
+              </li>
+              <li class="skill-pill">
+                <span class="skill-name">Arduino IDE</span>
+                <span class="skill-level">Firmware</span>
+              </li>
+              <li class="skill-pill">
+                <span class="skill-name">Gesture Control Sensors</span>
+                <span class="skill-level">Telemetry</span>
+              </li>
+              <li class="skill-pill">
+                <span class="skill-name">Robotics Prototyping</span>
+                <span class="skill-level">Practical</span>
+              </li>
+              <li class="skill-pill">
+                <span class="skill-name">Hardware Interfacing</span>
+                <span class="skill-level">Integration</span>
+              </li>
+            </ul>
+          </div>
+
+          <!-- Skill Category: Web Technologies & Database -->
+          <div class="skill-category-card">
+            <div class="category-header">
+              <div class="category-icon icon-web"><i class="fa-solid fa-code"></i></div>
+              <div>
+                <h3>Web Technologies & DB</h3>
+                <span class="category-subtitle">Full Stack Development</span>
+              </div>
+            </div>
+            <ul class="skills-list">
+              <li class="skill-pill">
+                <span class="skill-name">HTML5 & Semantic UI</span>
+                <span class="skill-level">Proficient</span>
+              </li>
+              <li class="skill-pill">
+                <span class="skill-name">CSS3 & Responsive Design</span>
+                <span class="skill-level">Proficient</span>
+              </li>
+              <li class="skill-pill">
+                <span class="skill-name">JavaScript (ES6+)</span>
+                <span class="skill-level">Intermediate</span>
+              </li>
+              <li class="skill-pill">
+                <span class="skill-name">MySQL Database</span>
+                <span class="skill-level">Relational</span>
+              </li>
+              <li class="skill-pill">
+                <span class="skill-name">Client-Server Architecture</span>
+                <span class="skill-level">Integration</span>
+              </li>
+            </ul>
+          </div>
+
+          <!-- Skill Category: Design & Professional Tools -->
+          <div class="skill-category-card">
+            <div class="category-header">
+              <div class="category-icon icon-tools"><i class="fa-solid fa-wand-magic-sparkles"></i></div>
+              <div>
+                <h3>Design & Productivity</h3>
+                <span class="category-subtitle">Workflow & Delivery</span>
+              </div>
+            </div>
+            <ul class="skills-list">
+              <li class="skill-pill">
+                <span class="skill-name">Git & GitHub</span>
+                <span class="skill-level">Version Control</span>
+              </li>
+              <li class="skill-pill">
+                <span class="skill-name">Canva & Visual Design</span>
+                <span class="skill-level">Creative</span>
+              </li>
+              <li class="skill-pill">
+                <span class="skill-name">VS Code / Development Tools</span>
+                <span class="skill-level">Workflow</span>
+              </li>
+              <li class="skill-pill">
+                <span class="skill-name">Presentation & Pitching</span>
+                <span class="skill-level">Effective</span>
+              </li>
+              <li class="skill-pill">
+                <span class="skill-name">Time Management & Teamwork</span>
+                <span class="skill-level">Strong</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="section projects-section">
+      <div class="container">
+        <div class="section-header">
+          <p class="section-tag">Featured Work</p>
+          <h2 class="section-title">Projects & Prototypes</h2>
+          <div class="section-divider"></div>
+        </div>
+
+        <!-- Filter Controls -->
+        <div class="project-filters">
+          <button class="filter-btn active" data-filter="all">All Projects</button>
+          <button class="filter-btn" data-filter="ai">AI & Machine Learning</button>
+          <button class="filter-btn" data-filter="iot">IoT & Robotics</button>
+          <button class="filter-btn" data-filter="web">Web Applications</button>
+        </div>
+
+        <!-- Projects Grid -->
+        <div class="projects-grid">
+          <!-- Project 1: AI Presentation Analyzer -->
+          <div class="project-card" data-category="ai">
+            <div class="project-card-header">
+              <div class="project-badge badge-ai"><i class="fa-solid fa-brain"></i> AI & NLP</div>
+              <div class="project-links">
+                <button class="icon-action-btn view-details-btn" data-project="analyzer" title="View Project Details">
+                  <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                </button>
+              </div>
+            </div>
+            <h3 class="project-title">AI Presentation Analyzer</h3>
+            <p class="project-desc">
+              An intelligent automated feedback tool designed to evaluate presentation delivery, pace, and content structure. Empowers students and professionals to refine communication through objective metrics.
+            </p>
+            <div class="project-features">
+              <span><i class="fa-solid fa-check"></i> Automated feedback metrics</span>
+              <span><i class="fa-solid fa-check"></i> Delivery & speech analysis</span>
+              <span><i class="fa-solid fa-check"></i> Actionable speaker coaching</span>
+            </div>
+            <div class="project-tech-tags">
+              <span class="tag">Python</span>
+              <span class="tag">AI / NLP</span>
+              <span class="tag">Web Tech</span>
+              <span class="tag">Analytics</span>
+            </div>
+            <div class="project-footer">
+              <button class="btn btn-outline btn-sm view-details-btn" data-project="analyzer">
+                <span>Explore Details</span>
+                <i class="fa-solid fa-info-circle"></i>
+              </button>
+            </div>
+          </div>
+
+          <!-- Project 2: Gesture-Controlled Robot -->
+          <div class="project-card" data-category="iot">
+            <div class="project-card-header">
+              <div class="project-badge badge-iot"><i class="fa-solid fa-robot"></i> IoT & Robotics</div>
+              <div class="project-links">
+                <button class="icon-action-btn view-details-btn" data-project="robot" title="View Project Details">
+                  <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                </button>
+              </div>
+            </div>
+            <h3 class="project-title">Gesture-Controlled Robot</h3>
+            <p class="project-desc">
+              A physical robotic prototype that detects hand gestures and wirelessly translates physical human motions into real-time directional rover movements.
+            </p>
+            <div class="project-features">
+              <span><i class="fa-solid fa-check"></i> ESP32 wireless controller</span>
+              <span><i class="fa-solid fa-check"></i> Real-time gesture telemetry</span>
+              <span><i class="fa-solid fa-check"></i> Arduino IDE firmware</span>
+            </div>
+            <div class="project-tech-tags">
+              <span class="tag">ESP32</span>
+              <span class="tag">Arduino IDE</span>
+              <span class="tag">Gesture Sensors</span>
+              <span class="tag">Embedded Systems</span>
+            </div>
+            <div class="project-footer">
+              <button class="btn btn-outline btn-sm view-details-btn" data-project="robot">
+                <span>Explore Details</span>
+                <i class="fa-solid fa-info-circle"></i>
+              </button>
+            </div>
+          </div>
+
+          <!-- Project 3: Internship Portal -->
+          <div class="project-card" data-category="web">
+            <div class="project-card-header">
+              <div class="project-badge badge-web"><i class="fa-solid fa-globe"></i> Web Platform</div>
+              <div class="project-links">
+                <button class="icon-action-btn view-details-btn" data-project="portal" title="View Project Details">
+                  <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                </button>
+              </div>
+            </div>
+            <h3 class="project-title">Student Internship Portal</h3>
+            <p class="project-desc">
+              A comprehensive web application enabling students to explore, filter, apply for, and track verified internship opportunities with relational database storage.
+            </p>
+            <div class="project-features">
+              <span><i class="fa-solid fa-check"></i> Dynamic opportunity filtering</span>
+              <span><i class="fa-solid fa-check"></i> MySQL database integration</span>
+              <span><i class="fa-solid fa-check"></i> Student application dashboard</span>
+            </div>
+            <div class="project-tech-tags">
+              <span class="tag">Python</span>
+              <span class="tag">MySQL</span>
+              <span class="tag">HTML5 / CSS3</span>
+              <span class="tag">JavaScript</span>
+            </div>
+            <div class="project-footer">
+              <button class="btn btn-outline btn-sm view-details-btn" data-project="portal">
+                <span>Explore Details</span>
+                <i class="fa-solid fa-info-circle"></i>
+              </button>
+            </div>
+          </div>
+
+          <!-- Project 4: Student Planner -->
+          <div class="project-card" data-category="web">
+            <div class="project-card-header">
+              <div class="project-badge badge-web"><i class="fa-solid fa-calendar-check"></i> Productivity Web</div>
+              <div class="project-links">
+                <button class="icon-action-btn view-details-btn" data-project="planner" title="View Project Details">
+                  <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                </button>
+              </div>
+            </div>
+            <h3 class="project-title">Student Planner & Tracker</h3>
+            <p class="project-desc">
+              An interactive academic assistant designed to organize daily coursework, track study streaks, schedule upcoming assessments, and optimize student time management.
+            </p>
+            <div class="project-features">
+              <span><i class="fa-solid fa-check"></i> Study streak & milestone tracker</span>
+              <span><i class="fa-solid fa-check"></i> Responsive intuitive layout</span>
+              <span><i class="fa-solid fa-check"></i> Fast client-side persistence</span>
+            </div>
+            <div class="project-tech-tags">
+              <span class="tag">JavaScript</span>
+              <span class="tag">HTML5</span>
+              <span class="tag">CSS3</span>
+              <span class="tag">LocalStorage</span>
+            </div>
+            <div class="project-footer">
+              <button class="btn btn-outline btn-sm view-details-btn" data-project="planner">
+                <span>Explore Details</span>
+                <i class="fa-solid fa-info-circle"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Education & Timeline Section -->
+    <section id="education" class="section education-section">
+      <div class="container">
+        <div class="section-header">
+          <p class="section-tag">Academic Background</p>
+          <h2 class="section-title">Education & Milestones</h2>
+          <div class="section-divider"></div>
+        </div>
+
+        <div class="timeline">
+          <!-- B.E. Degree -->
+          <div class="timeline-item">
+            <div class="timeline-dot active"></div>
+            <div class="timeline-content">
+              <div class="timeline-date">Pursuing Undergrad • Current</div>
+              <h3 class="timeline-degree">Bachelor of Engineering (B.E.)</h3>
+              <h4 class="timeline-institution">
+                <i class="fa-solid fa-building-columns"></i>
+                AJ Institute of Engineering and Technology, Mangalore
+              </h4>
+              <p class="timeline-spec">Computer Science & Engineering (Artificial Intelligence & Machine Learning)</p>
+              <div class="timeline-grade">
+                <span class="grade-badge"><i class="fa-solid fa-star"></i> CGPA: 7.5</span>
+                <span class="grade-note">Specializing in AI algorithms, Python programming, and embedded IoT systems</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Class XII -->
+          <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-content">
+              <div class="timeline-date">Pre-University Education</div>
+              <h3 class="timeline-degree">Class XII (Pre-University)</h3>
+              <h4 class="timeline-institution">
+                <i class="fa-solid fa-school"></i>
+                Canara Pre-University College, Mangalore
+              </h4>
+              <div class="timeline-grade">
+                <span class="grade-badge"><i class="fa-solid fa-certificate"></i> Score: 75%</span>
+                <span class="grade-note">Focus on Mathematics, Physics, and Foundational Science</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Class X -->
+          <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-content">
+              <div class="timeline-date">Secondary School</div>
+              <h3 class="timeline-degree">Class X (SSLC / Matriculation)</h3>
+              <h4 class="timeline-institution">
+                <i class="fa-solid fa-school"></i>
+                Carmel School, Mangalore
+              </h4>
+              <div class="timeline-grade">
+                <span class="grade-badge"><i class="fa-solid fa-certificate"></i> Score: 66%</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Certifications & Activities Section -->
+    <section id="certifications" class="section cert-section">
+      <div class="container">
+        <div class="section-header">
+          <p class="section-tag">Continuous Learning</p>
+          <h2 class="section-title">Certifications & Hackathons</h2>
+          <div class="section-divider"></div>
+        </div>
+
+        <div class="cert-grid">
+          <!-- Cert 1: ISRO Hackathon -->
+          <div class="cert-card highlight-cert">
+            <div class="cert-badge"><i class="fa-solid fa-rocket"></i> ISRO Hackathon</div>
+            <h3 class="cert-title">Bharatiya Antariksh Hackathon 2026</h3>
+            <p class="cert-issuer">ISRO / Hack2Skill</p>
+            <p class="cert-desc">
+              Active participation and successful space-tech idea submission solving real-world space and technology challenges.
+            </p>
+            <div class="cert-meta">
+              <span><i class="fa-regular fa-calendar"></i> 2026</span>
+              <span class="status-pill status-verified"><i class="fa-solid fa-check"></i> Successful Submission</span>
+            </div>
+          </div>
+
+          <!-- Cert 2: AI Bootcamp -->
+          <div class="cert-card">
+            <div class="cert-badge"><i class="fa-solid fa-brain"></i> AI & ML Training</div>
+            <h3 class="cert-title">AI Bootcamp</h3>
+            <p class="cert-issuer">Intellipaat</p>
+            <p class="cert-desc">
+              Intensive training covering Artificial Intelligence foundations, supervised & unsupervised machine learning, and hands-on algorithms.
+            </p>
+            <div class="cert-meta">
+              <span><i class="fa-regular fa-calendar"></i> August 2026</span>
+              <span class="status-pill status-completed">Completed</span>
+            </div>
+          </div>
+
+          <!-- Cert 3: Smart IoT Systems -->
+          <div class="cert-card">
+            <div class="cert-badge"><i class="fa-solid fa-microchip"></i> Hardware Workshop</div>
+            <h3 class="cert-title">Smart IoT Systems Design Workshop</h3>
+            <p class="cert-issuer">Kakunje Software Pvt. Ltd.</p>
+            <p class="cert-desc">
+              Practical hands-on workshop focused on IoT prototyping with ESP32 microcontrollers, hardware sensors, and cloud communication.
+            </p>
+            <div class="cert-meta">
+              <span><i class="fa-regular fa-calendar"></i> March 2026</span>
+              <span class="status-pill status-completed">Hands-on Prototyping</span>
+            </div>
+          </div>
+
+          <!-- Cert 4: VBYLD -->
+          <div class="cert-card">
+            <div class="cert-badge"><i class="fa-solid fa-landmark"></i> National Initiative</div>
+            <h3 class="cert-title">Viksit Bharat Young Leaders Dialogue (VBYLD)</h3>
+            <p class="cert-issuer">MyBharat</p>
+            <p class="cert-desc">
+              National youth dialogue participation focused on leadership, technological innovation, and India's vision for 2047.
+            </p>
+            <div class="cert-meta">
+              <span><i class="fa-regular fa-calendar"></i> September 2026</span>
+              <span class="status-pill status-completed">Qualified</span>
+            </div>
+          </div>
+
+          <!-- Cert 5: Mission LiFE -->
+          <div class="cert-card">
+            <div class="cert-badge"><i class="fa-solid fa-leaf"></i> Sustainability</div>
+            <h3 class="cert-title">Mission LiFE Quiz 2026</h3>
+            <p class="cert-issuer">Ministry of Environment, Forest & Climate Change / MyGov</p>
+            <p class="cert-desc">
+              National certification honoring environmental awareness, climate-positive lifestyles, and sustainable technology stewardship.
+            </p>
+            <div class="cert-meta">
+              <span><i class="fa-regular fa-calendar"></i> 2026</span>
+              <span class="status-pill status-completed">Certified</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section contact-section">
+      <div class="container">
+        <div class="section-header">
+          <p class="section-tag">Get In Touch</p>
+          <h2 class="section-title">Let's Connect & Collaborate</h2>
+          <div class="section-divider"></div>
+        </div>
+
+        <div class="contact-wrapper">
+          <div class="contact-info-panel">
+            <h3>Start a Conversation</h3>
+            <p>
+              I am actively seeking internship opportunities, collaborative AI/IoT projects, and mentorship. Feel free to reach out directly or send a message below!
+            </p>
+
+            <div class="contact-cards">
+              <!-- Email Card -->
+              <div class="contact-card">
+                <div class="contact-icon"><i class="fa-solid fa-envelope"></i></div>
+                <div class="contact-details">
+                  <span class="contact-label">Email</span>
+                  <a href="mailto:ananyad2225@gmail.com" class="contact-value" id="email-text">ananyad2225@gmail.com</a>
+                </div>
+                <button class="copy-btn" data-clipboard="ananyad2225@gmail.com" title="Copy Email to Clipboard">
+                  <i class="fa-regular fa-copy"></i>
+                </button>
+              </div>
+
+              <!-- Phone Card -->
+              <div class="contact-card">
+                <div class="contact-icon"><i class="fa-solid fa-phone"></i></div>
+                <div class="contact-details">
+                  <span class="contact-label">Phone</span>
+                  <a href="tel:+916363200252" class="contact-value" id="phone-text">+91 6363200252</a>
+                </div>
+                <button class="copy-btn" data-clipboard="+916363200252" title="Copy Phone to Clipboard">
+                  <i class="fa-regular fa-copy"></i>
+                </button>
+              </div>
+
+              <!-- Location Card -->
+              <div class="contact-card">
+                <div class="contact-icon"><i class="fa-solid fa-location-dot"></i></div>
+                <div class="contact-details">
+                  <span class="contact-label">Location</span>
+                  <span class="contact-value">Mangalore, Karnataka, India</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Download CV Block -->
+            <div class="cv-download-box">
+              <div class="cv-icon"><i class="fa-solid fa-file-pdf"></i></div>
+              <div>
+                <h4>Official Resume</h4>
+                <p>Updated October 2026 • Verified PDF format</p>
+              </div>
+              <a href="resume.pdf" download="Ananya_DK_Resume.pdf" class="btn btn-primary btn-sm">
+                <i class="fa-solid fa-download"></i>
+                <span>Download</span>
+              </a>
+            </div>
+          </div>
+
+          <!-- Contact Form -->
+          <div class="contact-form-panel">
+            <form id="contact-form" class="contact-form">
+              <div class="form-group">
+                <label for="name">Your Name <span class="required">*</span></label>
+                <input type="text" id="name" name="name" placeholder="e.g. Rahul Sharma" required>
+              </div>
+
+              <div class="form-group">
+                <label for="email">Your Email <span class="required">*</span></label>
+                <input type="email" id="email" name="email" placeholder="e.g. rahul@example.com" required>
+              </div>
+
+              <div class="form-group">
+                <label for="subject">Subject <span class="required">*</span></label>
+                <input type="text" id="subject" name="subject" placeholder="Internship Opportunity / Project Inquiry" required>
+              </div>
+
+              <div class="form-group">
+                <label for="message">Your Message <span class="required">*</span></label>
+                <textarea id="message" name="message" rows="5" placeholder="Hello Ananya, I would love to connect with you regarding..." required></textarea>
+              </div>
+
+              <button type="submit" class="btn btn-primary btn-block submit-btn">
+                <span>Send Message</span>
+                <i class="fa-solid fa-paper-plane"></i>
+              </button>
+              <p class="form-status" id="form-status"></p>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Project Details Modal -->
+  <div id="project-modal" class="modal" aria-hidden="true" role="dialog" aria-labelledby="modal-title">
+    <div class="modal-overlay" id="modal-overlay"></div>
+    <div class="modal-container">
+      <button class="modal-close-btn" id="modal-close" aria-label="Close Modal">
+        <i class="fa-solid fa-xmark"></i>
+      </button>
+
+      <div class="modal-body" id="modal-body">
+        <!-- Injected via script.js dynamically -->
+      </div>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container footer-container">
+      <div class="footer-brand">
+        <span class="brand-bracket">&lt;</span>
+        <span class="brand-name">Ananya D K</span>
+        <span class="brand-bracket">/&gt;</span>
+        <p>CSE (AI & ML) Student • Mangalore, Karnataka</p>
+      </div>
+
+      <div class="footer-links">
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#education">Education</a>
+        <a href="#contact">Contact</a>
+      </div>
+
+      <div class="footer-copy">
+        <p>&copy; 2026 Ananya D K. Crafted with passion & AI.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Floating Scroll To Top Button -->
+  <button id="scroll-top-btn" class="scroll-top-btn" aria-label="Scroll to top" title="Scroll to top">
+    <i class="fa-solid fa-arrow-up"></i>
+  </button>
+
+  <!-- Main JavaScript File -->
+  <script src="script.js"></script>
+</body>
+</html>
